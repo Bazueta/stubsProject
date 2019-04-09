@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Model {
 	Player p;
-	ScoreObject[] s;
+	ScoringObject[] s;
 	Scoring score;
 	
 	public void updateGame() {
