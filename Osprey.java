@@ -22,9 +22,10 @@ public class Osprey implements Player{
 	 * updates location(xloc and yloc) for osprey object
 	 * @param none
 	 * @return none
+	 * @author Anna Bortle
 	 */
 	public void move() {
-		System.out.println("player move method called.");
+		//System.out.println("osprey move method called.");
 	
 		xloc += xincr;
 		yloc += yincr;
