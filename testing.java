@@ -4,6 +4,32 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class testing {
+	//Clapper Rail Class
+	@Test
+	public void ClapperRailMoveTest1() {
+		ClapperRail cr1 = new ClapperRail(0,0,2,2);
+		cr1.move();
+		assertEquals(2,cr1.xloc);
+		assertEquals(2,cr1.yloc);
+	}
+	@Test
+	public void ClapperRailMoveTest2() {
+		ClapperRail cr2 = new ClapperRail(100,100,-10,-20);
+		cr2.move();
+		cr2.move();
+		assertEquals(80,cr2.xloc);
+		assertEquals(60,cr2.yloc);
+	}
+	@Test
+	public void ClapperRailMoveTest3() {
+		ClapperRail cr3 = new ClapperRail(40,80,40,20);
+		cr3.move();
+		cr3.move();
+		cr3.move();
+		assertEquals(160,cr3.xloc);
+		assertEquals(140,cr3.yloc);
+	}
+	
 	//Osprey Class
 	@Test
 	public void OspreyMoveTest1() {
