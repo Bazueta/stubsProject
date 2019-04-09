@@ -5,6 +5,6 @@ public class Question {
 	String ans1;
 	String ans2;
 	int correctAns;
-		
+	
 
 }

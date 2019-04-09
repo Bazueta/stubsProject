@@ -2,10 +2,11 @@ package project;
 import java.util.*;
 public class Scoring {
 	int totalScore;
-	HashMap<ScoringObject,Integer> ScoringTable;
+	HashMap<String,Integer> ScoringTable = new HashMap<>();
 	
 	public boolean updateScore(ScoringObject o) {
-		if(ScoringTable.put(o, o.pointValue) != null) {
+		Integer pointvalue = ScoringTable.put(o.ID, o.pointValue);
+		if(ScoringTable.containsKey(o.ID)) {
 			return true;
 		}
 		else {
