@@ -56,4 +56,57 @@ public class testing {
 		assertEquals(sobj2.yloc,96);
 	}
 	
+	//Fox moveEnter() and moveExit() tests
+	@Test
+	public void FoxEnter() {
+		Fox fox = new Fox(0,0,12,12);
+		fox.moveEnter();
+		assertEquals(12, fox.xloc);
+		assertEquals(12, fox.yloc);	
+	}
+
+	@Test
+	public void FoxEnter2() {
+		Fox fox = new Fox(10,17,12,-12);
+		fox.moveEnter();
+		fox.moveEnter();
+		assertEquals(34, fox.xloc);
+		assertEquals(-7, fox.yloc);
+	}
+	@Test
+	public void FoxEnter3() {
+		Fox fox = new Fox(0,2,-35,12);
+		fox.moveEnter();
+		fox.moveEnter();
+		fox.moveEnter();
+		assertEquals(-105, fox.xloc);
+		assertEquals(38, fox.yloc);
+	}
+	
+	@Test
+	public void FoxExit() {
+		Fox fox = new Fox(0,0,12,12);
+		fox.moveExit();
+		assertEquals(-12, fox.xloc);
+		assertEquals(-12, fox.yloc);	
+	}
+
+	@Test
+	public void FoxExit2() {
+		Fox fox = new Fox(10,17,12,-12);
+		fox.moveExit();
+		fox.moveExit();
+		assertEquals(-14, fox.xloc);
+		assertEquals(41, fox.yloc);
+	}
+	@Test
+	public void FoxExit3() {
+		Fox fox = new Fox(0,2,-35,12);
+		fox.moveExit();
+		fox.moveExit();
+		fox.moveExit();
+		assertEquals(105, fox.xloc);
+		assertEquals(-34, fox.yloc);
+	}
+	
 }

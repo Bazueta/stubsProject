@@ -11,6 +11,14 @@ public class Fox{
 	ArrayList<Question> questions= new ArrayList<>();
 	BufferedImage[][] imageArray;
 	
+	Fox(int xloc,int yloc,int xincr,int yincr){
+		this.xloc =xloc;
+		this.yloc = yloc;
+		this.xincr = xincr;
+		this.yincr = yincr;
+		
+	}
+	
 	/**
 	 * updates x and y locations based on the x and y increment
 	 * @param none
