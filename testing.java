@@ -1,10 +1,9 @@
 package project;
 
-import static org.junit.Assert.assertEquals;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class testing {
-	
 	//Osprey Class
 	@Test
 	public void OspreyMoveTest1() {
@@ -30,17 +29,31 @@ public class testing {
 		assertEquals(100, o3.xloc);
 		assertEquals(60, o3.yloc);
 	}
+		
 	
-	//Scoring Class
+	//ScoringTest and ScoringObjectTest
 	@Test
-	public void ScoringTest() {
+	public void ScoringTestandScoringObjectTest() {
 		Scoring scoring = new Scoring();
 		ScoringObject sobj1 = new ScoringObject(100,100,2,2,1,"3");
-		ScoringObject sobj2 = new ScoringObject(100,100,2,2,1,"3");
-		ScoringObject sobj3 = new ScoringObject(100,100,2,2,2,"4");
-		assertEquals(scoring.updateScore(sobj1),true);
-		scoring.updateScore(sobj2);
-		//assertEquals(scoring.ScoringTable.get("3"),2);
+		ScoringObject sobj2 = new ScoringObject(100,100,-2,-2,1,"3");
+		ScoringObject sobj3 = new ScoringObject(100,100,2,2,3,"4");
+		assertEquals(scoring.updateScore(sobj1), true);
+		assertEquals(scoring.updateScore(sobj2), true);
+		assertEquals(scoring.updateScore(sobj3), true);
+		assertEquals(scoring.amountContained("3"),2);
+		sobj1.move();
+		assertEquals(sobj1.xloc,102);
+		assertEquals(sobj1.yloc,102);
+		sobj2.move();
+		assertEquals(sobj2.xloc,98);
+		assertEquals(sobj2.yloc,98);
+		sobj1.move();
+		assertEquals(sobj1.xloc,104);
+		assertEquals(sobj1.yloc,104);
+		sobj2.move();
+		assertEquals(sobj2.xloc,96);
+		assertEquals(sobj2.yloc,96);
 	}
 	
 }

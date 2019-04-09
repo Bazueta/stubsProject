@@ -16,6 +16,11 @@ public class ScoringObject {
 		this.ID = ID;
 	}
 	
+	/**
+	 * updates location(xloc and yloc) for  ScoringObject object
+	 * @param none
+	 * @return none
+	 */
 	public void move() {
 		this.xloc += this.xIncr;
 		this.yloc += this.yIncr;
