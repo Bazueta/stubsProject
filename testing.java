@@ -1,5 +1,5 @@
 package project;
 
-public class Model {
+public class testing {
 
 }

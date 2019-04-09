@@ -10,6 +10,11 @@ public class ClapperRail {
 	int yincr;
 	BufferedImage[][] imageArray;
 	
+	/** 
+	 * updates the location of the Clapper Rail object
+	 * @param none
+	 * @return none
+	 */
 	public void move() {
 		System.out.println("player move method called.");
 	
