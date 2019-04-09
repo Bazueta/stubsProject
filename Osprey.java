@@ -25,9 +25,14 @@ public class Osprey implements Player{
 	 * @author Anna Bortle
 	 */
 	public void move() {
-		//System.out.println("osprey move method called.");
-	
 		xloc += xincr;
 		yloc += yincr;
+	}
+	
+	public int getxloc() {
+		return this.xloc;
+	}
+	public int getyloc() {
+		return this.yloc;
 	}
 }

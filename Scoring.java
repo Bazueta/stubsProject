@@ -8,6 +8,7 @@ public class Scoring {
 	 * 
 	 * @param scoringobject the scoringobject the method adds to the ScoringTable
 	 * @return true or false depending on if the ScoringObject was added to the ScoringTable
+	 * @author Ken Chan
 	 */
 	public boolean updateScore(ScoringObject scoringobject) {
 		if(ScoringTable.add(scoringobject)) {
@@ -22,6 +23,7 @@ public class Scoring {
 	 * 
 	 * @param ID the ID the method is trying to find the total amount of in ScoringTable
 	 * @return the amount of ScoringObjects with the given ID in ScoringTable
+	 * @author Ken Chan
 	 */
 	public int amountContained(String ID) {
 		int totalAmountContained = 0;

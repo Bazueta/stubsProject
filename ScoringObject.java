@@ -20,6 +20,7 @@ public class ScoringObject {
 	 * updates location(xloc and yloc) for  ScoringObject object
 	 * @param none
 	 * @return none
+	 * @author Ken Chan
 	 */
 	public void move() {
 		this.xloc += this.xIncr;
