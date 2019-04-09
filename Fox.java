@@ -6,10 +6,33 @@ import java.util.*;
 public class Fox{
 	int xloc;
 	int yloc;
+	int xincr;
+	int yincr;
 	ArrayList<Question> questions= new ArrayList<>();
 	BufferedImage[][] imageArray;
 	
-	public void move() {
+	/**
+	 * updates x and y locations based on the x and y increment
+	 * @param none
+	 * @return none
+	 * @author Celeste Lemus
+	 */
+	public void moveEnter() {
+		xloc+=xincr;
+		yloc += yincr;
+		
+		
+	}
+	
+	/**
+	 * updates x and y locations based on the negative x and y increment
+	 * @param none
+	 * @return none
+	 * @author Celeste Lemus
+	 */
+	public void moveExit() {
+		xloc+=-xincr;
+		yloc +=-yincr;
 		
 	}
 
