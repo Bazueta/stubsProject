@@ -10,6 +10,19 @@ public class Osprey implements Player{
 	int yincr;
 	BufferedImage[][] imageArray;
 	
+	Osprey(int x, int y, int xi, int yi) {
+		xloc = x; 
+		yloc = y; 
+		xincr = xi; 
+		yincr = yi;
+	}
+	
+	
+	/**
+	 * updates location(xloc and yloc) for osprey object
+	 * @param none
+	 * @return none
+	 */
 	public void move() {
 		System.out.println("player move method called.");
 	
